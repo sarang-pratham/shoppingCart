@@ -31,7 +31,6 @@ addItemBtn.addEventListener("click", (e) => {
 	let unit = Number(quantity) * itemsAvailable.find((ele) => ele.item === item).price;
 	let net = unit + unit * tax;
 
-	// console.log(up);
 	items.push({ item, quantity, unit, net });
 	console.log(items);
 	createItem(item, quantity);

@@ -5,8 +5,6 @@ const attemptsDisplay = document.querySelector(".attempts");
 
 let users = [{ username: "pratham", password: "Sarang@11" }];
 
-// console.log(typeof username.value, typeof users[0].username);
-
 let attemptsRemaining = 4;
 
 loginBtn.addEventListener("click", (e) => {
