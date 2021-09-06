@@ -1,0 +1,133 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--gold-fusion: hsla(50, 14%, 42%, 1);
+	--key-lime: hsla(75, 83%, 84%, 1);
+	--yellow-green-crayola: hsla(75, 68%, 70%, 1);
+	--rosewood: hsla(3, 78%, 18%, 1);
+	--midnight-green-eagle-green: hsla(193, 100%, 20%, 1);
+}
+
+body {
+	background-color: var(--midnight-green-eagle-green);
+	font-family: "Courier New", Courier, monospace;
+}
+h1 {
+	color: white;
+	text-transform: capitalize;
+	word-spacing: 0.2em;
+	text-align: center;
+	font-size: 3em;
+	padding: 0.7em;
+	text-shadow: 2px 2px var(--gold-fusion);
+width: max-content;
+margin: 0.5em auto;
+	border: 10px solid;
+	border-top-left-radius: 1em;
+	border-bottom-right-radius: 1em;
+}
+h2 {
+	color: white;
+	width: max-content;
+	margin: auto;
+	text-align: center;
+	border-bottom: 3px solid ;
+}
+form {
+	margin: auto;
+	width: 40em;
+	display: flex;
+	column-gap: 10em;
+	justify-content: center;
+	align-items: center;
+}
+label {
+	display: block;
+	font-size: 1.5em;
+	margin: 1em 0 0.2em 0;
+	color: var(--key-lime);
+	font-style: bold;
+}
+form select {
+	appearance: none;
+	width: 100%;
+	border: none;
+	border-radius: 0.25em;
+	padding: 0.25em 0.5em;
+	font-size: 1.25rem;
+	cursor: pointer;
+	line-height: 1.1;
+	background-color: #fff;
+	background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+}
+
+input {
+	border: none;
+	border-radius: 0.25em;
+	padding: 0.25em 0.5em;
+	font-size: 1.25rem;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+#add {
+	display: block;
+	margin: 2em 0;
+	font-size: 1rem;
+	padding: 0.5rem 2rem;
+	font-weight: bold;
+	cursor: pointer;
+	border: none;
+	border-radius: 0.3rem;
+	background: var(--rosewood);
+	color: white;
+}
+.form-control {
+	align-self: flex-start;
+}
+.form-control-list {
+	align-self: flex-start;
+	padding: 2em 0 0 0;
+}
+
+.proceed {
+	cursor: pointer;
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin: 1em 0;
+	padding: 0.5rem 2rem;
+	border: none;
+	border-radius: 0.3rem;
+	box-shadow: 2px 2px 0 var(--key-lime);
+	background-color: var(--yellow-green-crayola);
+}
+.proceed:active,
+#add:active {
+	transform: scale(0.95);
+}
+
+li {
+	list-style-type: none;
+	color: var(--key-lime);
+	line-height: 1.5;
+	padding: 1rem 0;
+}
+li p {
+	font-size: 1.2rem;
+}
+li button {
+	padding: 0.25em 1em;
+	font-size: 0.8rem;
+	margin-top: 1em;
+	border: none;
+	background-color: rgb(201, 19, 19);
+	color: white;
+	cursor: pointer;
+	font-weight: bold;
+}
